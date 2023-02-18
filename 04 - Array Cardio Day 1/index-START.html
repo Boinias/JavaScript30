@@ -80,6 +80,28 @@ console.log (sortedInventorsByAge)
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
 
+    const boulevards = [
+
+      'Boulevards of Paris',
+      'City walls of Paris',
+      'Thiers wall',
+      'Wall of Charles V',
+      'Boulevard Poniatowski',
+      'Boulevard Soult',
+      'Boulevard des Capucines',
+      'Boulevard de la Chapelle',
+      'Boulevard de Clichy',
+      'Boulevard du Crime'
+];
+
+let boulevardsSorted = boulevards.filter(containsDe)
+function containsDe (value) {
+    return value.includes('de')
+}
+
+console.log(boulevardsSorted)
+
+
     // 7. sort Exercise
     // Sort the people alphabetically by last name
 
