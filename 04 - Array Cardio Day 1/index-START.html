@@ -99,15 +99,57 @@ function containsDe (value) {
     return value.includes('de')
 }
 
-console.log(boulevardsSorted)
 
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+const peopleSorted = people.sort()
+
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+    const amountOfCars = data.reduce((acc,val) => {
+      if (val == 'car') {
+        acc += 1;
+      }
+      return acc
+    }, 0)
+
+    const amountOfTrucks = data.reduce((acc,val) => {
+      if (val == 'truck') {
+        acc += 1;
+      }
+      return acc
+    }, 0)
+
+    const amountOfBikes = data.reduce((acc,val) => {
+      if (val == 'bike') {
+        acc += 1;
+      }
+      return acc
+    }, 0)
+
+    const amountOfWalks = data.reduce((acc,val) => {
+      if (val == 'walk') {
+        acc += 1;
+      }
+      return acc
+    }, 0)
+
+    const amountOfVans = data.reduce((acc,val) => {
+      if (val == 'van') {
+        acc += 1;
+      }
+      return acc
+    }, 0)
+
+    console.log (amountOfCars)
+    console.log (amountOfTrucks)
+    console.log (amountOfBikes)
+    console.log (amountOfWalks)
+    console.log (amountOfVans)
 
   </script>
 </body>
